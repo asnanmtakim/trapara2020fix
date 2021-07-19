@@ -285,7 +285,7 @@
                             var i = up.files.length,
                                 maxCountError = false;
                             plupload.each(files, function(file) {
-                                if (uploader.settings.max_file_count && i >= uploader.settings.max_file_count) {
+                                if (uploader.settings.max_file_count && i > uploader.settings.max_file_count) {
                                     maxCountError = true;
                                     setTimeout(function() {
                                         up.removeFile(file);
